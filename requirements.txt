@@ -1,0 +1,7 @@
+pandas
+langid
+txtai
+sacremoses
+sentencepiece
+langchain
+nltk

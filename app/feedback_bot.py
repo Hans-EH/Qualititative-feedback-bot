@@ -17,7 +17,7 @@ nltk.download('punkt')  # Download the punkt tokenizer data
 translate_text_manually = False #specify if you should translate text manually using "translate_text()". set to false to let Ollama try to translatei t
 max_token_context_length = 2000
 ollama_model = "llama2"
-file_path = 'raw_data/complete.csv' #of the original data
+file_path = '../data/raw_data/complete.csv' #of the original data
 
 
 
@@ -75,7 +75,7 @@ def translate_text(text):
 #lots queries and its output
 def log_query(query,output):
     # Specify the CSV file path
-    csv_file_path = 'processed_data/log.csv'
+    csv_file_path = '../data/processed_data/log.csv'
 
     # Check if the CSV file exists
     if os.path.exists(csv_file_path):
